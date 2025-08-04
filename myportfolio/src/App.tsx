@@ -1,23 +1,26 @@
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="bg-black text-white scroll-smooth">
+      <Navbar />
       <Hero />
       <About />
-      <Education />
       <Skills />
       <Projects />
       <Achievements />
       <Contact />
-      <Footer />
+      <footer className="text-center text-sm text-gray-500 py-4 bg-black">
+        © {new Date().getFullYear()} S Ramyabharathi. Built with 💙 using React
+        + Tailwind.
+      </footer>
+      ;
     </div>
   );
 }
